@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-pink: #B52184;
+    --font-of-p: #312D64;
+    --font-body: #F9F4FB;
+
+
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+body button:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.container {
+
+    width: min(144rem, 100%);
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: var(--font-body);
+    width: 100%;
+
+}
+
+.div-header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 9.3rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.div-header img:nth-child(2) {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: 1.5s all;
+    margin-bottom: 1.7rem;
+
+}
+
+.div-header h1 {
+    color: var(--font-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+
+}
+
+.div-header p {
+    color: var(--font-of-p);
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+main {
+    width: 100%;
+    background-color: var(--font-of-p);
+
+}
+
+.div-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5.3rem 9rem;
+
+    gap: 5.0rem;
+
+
+}
+
+.div-main .card {
+    width: 35.2rem;
+    height: 33.8rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.0rem;
+    gap: 3.3rem;
+    padding: 2.7rem;
+    box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+    color: var(--font-pink);
+    font-size: 3.0rem;
+    font-weight: 900;
+    padding-bottom: 2.0rem;
+
+}
+
+.card.pink p {
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: var(--font-of-p);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+.div-main img {
+    object-fit: cover;
+    width: 8.0rem;
+    height: 8.0rem;
+}
+
+section {
+    width: 100%;
+    background-color: var(--font-body);
+}
+
+.div-section {
+    padding: 7.8rem 4rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-section img {
+    display: none;
+}
+
+.div-section h1 {
+    color: var(--font-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 4.3rem;
+
+}
+
+.div-section input {
+
+    color: var(--font-of-p);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.24rem;
+    width: 35.2rem;
+    padding: 1.2rem 1.6rem 1.4rem 4.3rem;
+    border-radius: 1.6rem;
+    border: 0.15rem solid var(--font-of-p);
+    outline: none;
+
+}
+
+.div-section input::placeholder {
+    color: var(--font-of-p);
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+
+
+}
+
+input.person {
+    background-image: url(images/person.svg);
+}
+
+input.email {
+    background-image: url(images/at.svg);
+
+}
+
+input.person,
+input.email {
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+input.msg {
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    vertical-align: top;
+    height: 12.6rem;
+    padding: 1.2rem 1.6rem 1.6rem;
+}
+
+input.msg::placeholder {
+    position: absolute;
+    top: 15;
+    display: flex;
+
+}
+
+.inputs label {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem
+}
+
+.div-section button {
+    font-family: 'Mulish', sans-serif;
+    display: inline-flex;
+    width: 15.1rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1.6rem;
+    border: none;
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+
+
+}
+
+footer {
+
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+}
+
+.div-footer {
+    width: 100%;
+    height: 7.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media(min-width: 1440px) {
+    .div-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 3rem 10.4rem 10.9rem;
+
+    }
+
+    .div-header img:nth-child(2) {
+        width: 100%;
+        object-fit: cover;
+        transition: 1.5s all;
+        width: 72rem;
+        height: 73rem;
+    }
+
+    .text-header {
+        margin: auto;
+        text-align: start;
+    }
+
+    .text-header h1 {
+        font-size: 5.9rem;
+    }
+
+    .text-header img {
+        padding-top: 18rem;
+    }
+
+    .div-main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+
+
+    }
+
+    .div-section .inputs {
+        padding: 9.5rem 9.2rem 10.4rem 10.9rem;
+    }
+
+    .div-section img {
+        width: 64.4rem;
+        height: 61.2rem;
+        display: block;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transition: 1.5s all;
+    }
+
+}
